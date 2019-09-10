@@ -1,0 +1,39 @@
+@import "../../assets/weui-2.0.0/style/widget/weui-panel/weui-panel.wxss";
+@import "../../assets/weui-2.0.0/style/widget/weui-searchbar/weui-searchbar.wxss";
+@import "../../assets/weui-2.0.0/style/widget/weui-cell/weui-cell.wxss";
+@import "../../assets/weui-2.0.0/style/widget/weui-cell/weui-access.wxss";
+
+.relation-visitor-container {}
+
+.relation-visitor-container .avatar {
+    margin-right: 16px;
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+}
+
+.relation-visitor-container .user-info {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.relation-visitor-container .user-info .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.relation-visitor-container .user-info .company {
+    font-size: 12px;
+    color: #777;
+    padding-top: 5px;
+}
+
+.relation-visitor-container .tools {
+    align-self: flex-start;
+}

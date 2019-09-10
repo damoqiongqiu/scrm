@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/msg-main/msg-main",
+    "pages/card-detail/card-detail",
+    "pages/edit-main/edit-main",
+    "pages/edit-basic-info/edit-basic-info",
+    "pages/edit-company-info/edit-company-info",
+    "pages/choose-card-template/choose-card-template",
+    "pages/edit-detail-images/edit-detail-images",
+    "pages/map/map",
+    "pages/relation-main/relation-main",
+    "pages/share-main/share-main",
+    "pages/verify/verify"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff7700",
+    "navigationBarTitleText": "客流",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#13227a",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/images/home-1.png",
+        "selectedIconPath": "assets/images/home-2.png"
+      },
+      {
+        "text": "关系",
+        "pagePath": "pages/relation-main/relation-main",
+        "iconPath": "assets/images/relation-1.png",
+        "selectedIconPath": "assets/images/relation-2.png"
+      },
+      {
+        "text": "消息",
+        "pagePath": "pages/msg-main/msg-main",
+        "iconPath": "assets/images/msg-1.png",
+        "selectedIconPath": "assets/images/msg-2.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/mine",
+        "iconPath": "assets/images/user-1.png",
+        "selectedIconPath": "assets/images/user-2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "选择你的位置"
+    }
+  }
+}

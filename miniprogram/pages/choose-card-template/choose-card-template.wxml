@@ -1,0 +1,28 @@
+<view class="page choose-card-template-container">
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+    <view class="my-panel">
+        <view class="my-panel__hd">
+            <view class="page__title">选择名片模板</view>
+        </view>
+        <view class="my-panel__bd">
+            <view class="choose-card-view">
+                <card-default></card-default>
+            </view>
+            <view class="choose-card-view">
+                <card-default></card-default>
+            </view>
+            <view class="choose-card-view">
+                <card-default></card-default>
+            </view>
+        </view>
+    </view>
+    <view class="weui-flex btn-container">
+        <view class="weui-flex__item btn-view">
+            <view class="placeholder">
+                <button type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="toEditMain">
+                    保存
+                </button>
+            </view>
+        </view>
+    </view>
+</view>

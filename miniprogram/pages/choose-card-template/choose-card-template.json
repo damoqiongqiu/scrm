@@ -1,0 +1,9 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "选择模板",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "card-default": "/components/card-default/card-default"
+    }
+}

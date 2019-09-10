@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "subject-action":"../subject-action/subject-action"
+    }
+}

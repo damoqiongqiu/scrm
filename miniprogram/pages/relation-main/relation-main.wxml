@@ -1,0 +1,28 @@
+<view class="page relation-main-container">
+    <view class="weui-tab">
+        <view class="weui-navbar">
+            <block wx:for="{{tabs}}" wx:key="*this">
+                <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                    <view class="weui-navbar__title">{{item}}</view>
+                </view>
+            </block>
+        </view>
+        <view class="weui-tab__panel">
+            <view class="weui-tab__content relation-tab-container" hidden="{{activeIndex != 0}}">
+                <view wx:if="{{activeIndex==0}}">
+                    <relation-visitor></relation-visitor>
+                </view>
+            </view>
+            <view class="weui-tab__content relation-tab-container" hidden="{{activeIndex != 1}}">
+                <view wx:if="{{activeIndex==1}}">
+                    <relation-customer></relation-customer>
+                </view>
+            </view>
+            <view class="weui-tab__content relation-tab-container" hidden="{{activeIndex != 2}}">
+                <view wx:if="{{activeIndex==2}}">
+                    <relation-analytics></relation-analytics>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

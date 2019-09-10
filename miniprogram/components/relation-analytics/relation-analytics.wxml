@@ -1,0 +1,35 @@
+<view class="relation-analytics-container">
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="weui-grids">
+                <block wx:for="{{msgs}}">
+                    <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                        <view class="data">{{item.count}}</view>
+                        <view class="weui-grid__label">{{item.label}}</view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="chart-container">
+                <ec-canvas ec="{{ ec1 }}"></ec-canvas>
+            </view>
+        </view>
+    </view>
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="chart-container">
+                <ec-canvas ec="{{ ec2 }}"></ec-canvas>
+            </view>
+        </view>
+    </view>
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="chart-container">
+                <ec-canvas ec="{{ ec3 }}"></ec-canvas>
+            </view>
+        </view>
+    </view>
+</view>

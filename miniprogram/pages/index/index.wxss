@@ -1,0 +1,65 @@
+.index-container {}
+
+.index-container .card-container {
+    padding: 20rpx;
+}
+
+.index-container .btn-container {
+    padding: 20rpx;
+}
+
+.index-container .btn-container .btn-view {
+    flex: 1;
+    margin-right: 20rpx;
+}
+
+.index-container .btn-container .btn-view:last-child {
+    flex: 1;
+    margin-right: 0rpx;
+}
+
+.index-container .btn-container .btn-view button {
+    width: 100%;
+    border-radius: 0;
+}
+
+.index-container .action-container {
+    padding: 20rpx 0rpx;
+}
+
+.index-container .data-container .data-item {
+    padding: 20rpx 10rpx;
+}
+
+.index-container .data-container .data-item .data {
+    display: block;
+    text-align: center;
+    color: rgba(0, 0, 0, .9);
+    font-size: 36rpx;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.index-container .data-container .data-item .label {
+    display: block;
+    text-align: center;
+    color: rgba(0, 0, 0, .9);
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.index-container .share-btn {
+    display: inline-block;
+    position: absolute;
+    width: 200rpx;
+    background: salmon;
+    opacity: 0;
+    height: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}

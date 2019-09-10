@@ -1,0 +1,81 @@
+@import "./assets/weui-2.0.0/style/weui.wxss";
+
+page {
+    background-color: #EDEDED;
+    font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.page__hd {
+    padding: 20rpx 20rpx 20rpx 0rpx;
+}
+
+.page__bd {
+    padding-bottom: 20rpx;
+}
+
+.page__bd_spacing {
+    padding-left: 15rpx;
+    padding-right: 15rpx;
+}
+
+.page__ft {
+    text-align: center;
+    padding: 0 0 10rpx;
+    padding: 0 0 calc(10rpx + constant(safe-area-inset-bottom));
+    padding: 0 0 calc(10rpx + env(safe-area-inset-bottom));
+}
+
+.page__title {
+    text-align: left;
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.page__desc {
+    margin-top: 5rpx;
+    color: #888888;
+    text-align: left;
+    font-size: 14rpx;
+}
+
+.weui-cell_example:before {
+    left: 52rpx;
+}
+
+
+.my-panel:first-child {
+    margin-top: 0;
+}
+
+.my-panel {
+    background-color: #fff;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.my-panel__hd {
+    padding: 16px 16px 13px;
+    color: rgba(0, 0, 0, .9);
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+
+}
+
+.my-panel__hd:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1rpx solid rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, .1);
+    left: 16px;
+    right: 16px;
+}
+
+.my-panel__bd {
+    padding: 16px;
+}

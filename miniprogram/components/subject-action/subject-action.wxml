@@ -1,0 +1,14 @@
+<view class="action-container">
+    <view class="avatar-view">
+        <image src="../../assets/images/avatar.jpg" bindtap="onChooseImage"></image>
+    </view>
+    <view class="text-view">
+        <view class="col-1">
+            <text class="user-name">忧郁的乌龟</text>
+            <text class="action">收藏了你的名片</text>
+        </view>
+        <view class="col-2">
+            <text class="time">2019/09/08</text>
+        </view>
+    </view>
+</view>

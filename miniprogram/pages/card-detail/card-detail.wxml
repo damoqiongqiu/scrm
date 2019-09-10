@@ -1,0 +1,73 @@
+<view class="page card-detail-container">
+    <view class="weui-panel">
+        <view class="weui-panel__bd card-container">
+            <card-default userId="1"></card-default>
+        </view>
+    </view>
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="weui-flex btn-container">
+                <view class="weui-flex__item btn-view">
+                    <navigator url="../edit-main/edit-main" class="my-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/edit.png" />
+                        <view class="weui-grid__label">编辑</view>
+                    </navigator>
+                </view>
+                <view class="weui-flex__item btn-view">
+                    <view class="my-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/share-2.png" />
+                        <view class="weui-grid__label">分享</view>
+                        <button class="hidden-btn" open-type="share">分享</button>
+                    </view>
+                </view>
+                <view class="weui-flex__item btn-view">
+                    <view class="my-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/msg-3.png" />
+                        <view class="weui-grid__label">消息</view>
+                        <button class='hidden-btn' open-type='contact'>消息</button>
+                    </view>
+                </view>
+                <view class="weui-flex__item btn-view">
+                    <view bindtap="makeCall" class="my-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/phone.png" />
+                        <view class="weui-grid__label">电话</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_text">
+                <view class="weui-media-box__title weui-media-box__title_in-text">我的家乡</view>
+                <view class="weui-media-box__desc">北京市朝阳区东四环1号</view>
+            </view>
+            <view class="weui-media-box weui-media-box_text">
+                <view class="weui-media-box__title weui-media-box__title_in-text">我的母校</view>
+                <view class="weui-media-box__desc">加里敦大学气球物理系</view>
+            </view>
+            <view class="weui-media-box weui-media-box_text">
+                <view class="weui-media-box__title weui-media-box__title_in-text">我的专业</view>
+                <view class="weui-media-box__desc">计算机信息系统</view>
+            </view>
+            <view class="weui-media-box weui-media-box_text">
+                <view class="weui-media-box__title weui-media-box__title_in-text">更多详情</view>
+                <view>
+                    <image style="width:100%;" src="../../assets/images/cat.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="more-info">
+                    <text>
+                        你好，我叫章小飞，我具有11年的IT从业经验，5年后端开发，6年前端开发。我在ZTEsoft工作6年多，期间领导或参与过公司多个核心技术框架和业务系统的研发工作，个人技术全面。
+                    </text>
+                    <text>从2014年开始，我担任ZTEsoft技术委员会常务委员，深度参与了公司各类技术架构和团队管理工作：</text>
+                    <text>
+                        PaaS平台方面：全程参与了“灯塔云”平台相关的建设工作，包括：技术选型、立项预算、人力支持、产品发布等。“灯塔云”由ZTEsoft技术委员会发起，是公司自研的私有云平台，核心技术栈是 Docker+K8S 。由于公司一直做运营商业务，在计费系统方面有多年的技术积累，所以云管平台方面没有基于 OpenStack 进行封装，而是自研了一套自己的云管系统。到目前为止，“灯塔云”已经成功在多个省级电信企业商用，整体运行平稳，没有发生重大故障。
+                    </text>
+                </view>
+                <view>
+                    <image style="width:100%;" src="../../assets/images/cat.jpg" mode="aspectFill"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

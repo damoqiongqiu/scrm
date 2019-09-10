@@ -1,0 +1,6 @@
+@import "../../assets/weui-2.0.0/style/widget/weui-panel/weui-panel.wxss";
+@import "../../assets/weui-2.0.0/style/widget/weui-searchbar/weui-searchbar.wxss";
+@import "../../assets/weui-2.0.0/style/widget/weui-cell/weui-cell.wxss";
+@import "../../assets/weui-2.0.0/style/widget/weui-cell/weui-access.wxss";
+
+.msg-list-container {}

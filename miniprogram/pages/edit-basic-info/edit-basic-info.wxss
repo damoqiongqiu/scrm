@@ -1,0 +1,13 @@
+.eidt-basic-info-container {}
+
+.eidt-basic-info-container .btn-container {
+    margin-top: 20rpx;
+}
+
+.eidt-basic-info-container .btn-container .btn-view {
+    padding: 0rpx 32rpx 32rpx 32rpx;
+}
+
+.eidt-basic-info-container .btn-container .btn-view button {
+    border-radius: 0rpx;
+}

@@ -1,0 +1,51 @@
+.card-detail-container {}
+
+.card-detail-container .card-container {
+    padding: 20rpx;
+}
+
+.card-detail-container .btn-container {
+    padding: 20rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-detail-container .more-info {
+    color: rgba(0, 0, 0, .5);
+    font-size: 28rpx;
+}
+
+.card-detail-container .more-info text {}
+
+.card-detail-container .btn-container .btn-view {
+    flex: 1;
+    margin-right: 20rpx;
+}
+
+.card-detail-container .btn-container .btn-view:last-child {
+    flex: 1;
+    margin-right: 0rpx;
+}
+
+.card-detail-container .btn-container .btn-view button {
+    width: 100%;
+    border-radius: 0;
+}
+
+.card-detail-container .btn-container .btn-view .my-grid {
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border: 1rpx solid rgba(0, 0, 0, .1);
+}
+
+.card-detail-container .btn-container .btn-view .hidden-btn {
+    display: inline-block;
+    position: absolute;
+    width: 200rpx;
+    background: salmon;
+    opacity: 0;
+    height: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}

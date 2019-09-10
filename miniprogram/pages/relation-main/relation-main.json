@@ -1,0 +1,11 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "关系",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "relation-customer": "/components/relation-customer/relation-customer",
+        "relation-visitor": "/components/relation-visitor/relation-visitor",
+        "relation-analytics": "/components/relation-analytics/relation-analytics"
+    }
+}

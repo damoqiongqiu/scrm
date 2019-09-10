@@ -1,0 +1,17 @@
+<view class="page verify-main-container">
+    <view class="weui-panel">
+        <view class="weui-panel__hd">
+            <view class="page__title">申请验证</view>
+        </view>
+        <view class="weui-panel__bd"></view>
+    </view>
+    <view class="weui-flex .btn-container">
+        <view class="weui-flex__item btn-view">
+            <view class="placeholder">
+                <button type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="toEditMain">
+                    保存
+                </button>
+            </view>
+        </view>
+    </view>
+</view>

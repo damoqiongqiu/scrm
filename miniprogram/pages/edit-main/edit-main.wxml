@@ -1,0 +1,58 @@
+<view class="page edit-main-container">
+    <view class="weui-panel">
+        <view class="weui-panel__hd">
+            <view class="page__title">编辑名片</view>
+        </view>
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_small-appmsg">
+                <view class="weui-cells weui-cells_in-small-appmsg">
+                    <navigator url="/pages/choose-card-template/choose-card-template" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <image src="/assets/images/poster.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <view>选择名片模板</view>
+                        </view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                    <navigator url="/pages/edit-basic-info/edit-basic-info" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <image src="/assets/images/list.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <view>编辑基本信息</view>
+                        </view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                    <navigator url="/pages/edit-detail-images/edit-detail-images" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <image src="/assets/images/edit.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <view>编辑图文详情</view>
+                        </view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                    <navigator url="/pages/verify/verify" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <image src="/assets/images/verify.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <view>申请加V认证</view>
+                        </view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-flex .btn-container">
+        <view class="weui-flex__item btn-view">
+            <view class="placeholder">
+                <button type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="toDetail">
+                    预览
+                </button>
+            </view>
+        </view>
+    </view>
+</view>

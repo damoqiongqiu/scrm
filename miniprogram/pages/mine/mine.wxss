@@ -1,0 +1,22 @@
+.weui-cell__hd.head image {
+    width: 120rpx;
+    height: 120rpx;
+    margin-right: 32rpx;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.weui-cell__hd image {
+    width: 70rpx;
+    height: 70rpx;
+    margin-right: 18px;
+    margin-left: 5rpx;
+    vertical-align: middle;
+}
+
+.weui-cell__ft .qrCode image {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.weui-cell__bd .account {}

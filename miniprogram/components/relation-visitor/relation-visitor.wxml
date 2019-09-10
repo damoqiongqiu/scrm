@@ -1,0 +1,114 @@
+<view class="relation-visitor-container">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+            <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+            </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+            <icon class="weui-icon-search" type="search" size="14"></icon>
+            <view class="weui-search-bar__text">搜索</view>
+        </label>
+    </view>
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd weui-cell_primary">
+                    <text>今日访问1024，总访问量65535</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_example ">
+                    <view class="weui-cell__hd">
+                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
+                    </view>
+                    <view class="weui-cell__bd user-info">
+                        <text class="user-name">大漠穷秋</text>
+                        <text class="company">仙女座科技有限公司</text>
+                    </view>
+                    <view class="weui-cell__ft tools">
+                        <text>2019/09/10</text>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_example ">
+                    <view class="weui-cell__hd">
+                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
+                    </view>
+                    <view class="weui-cell__bd user-info">
+                        <text class="user-name">大漠穷秋</text>
+                        <text class="company">仙女座科技有限公司</text>
+                    </view>
+                    <view class="weui-cell__ft tools">
+                        <text>2019/09/10</text>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_example ">
+                    <view class="weui-cell__hd">
+                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
+                    </view>
+                    <view class="weui-cell__bd user-info">
+                        <text class="user-name">大漠穷秋</text>
+                        <text class="company">仙女座科技有限公司</text>
+                    </view>
+                    <view class="weui-cell__ft tools">
+                        <text>2019/09/10</text>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_example ">
+                    <view class="weui-cell__hd">
+                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
+                    </view>
+                    <view class="weui-cell__bd user-info">
+                        <text class="user-name">大漠穷秋</text>
+                        <text class="company">仙女座科技有限公司</text>
+                    </view>
+                    <view class="weui-cell__ft tools">
+                        <text>2019/09/10</text>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_example ">
+                    <view class="weui-cell__hd">
+                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
+                    </view>
+                    <view class="weui-cell__bd user-info">
+                        <text class="user-name">大漠穷秋</text>
+                        <text class="company">仙女座科技有限公司</text>
+                    </view>
+                    <view class="weui-cell__ft tools">
+                        <text>2019/09/10</text>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_example ">
+                    <view class="weui-cell__hd">
+                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
+                    </view>
+                    <view class="weui-cell__bd user-info">
+                        <text class="user-name">大漠穷秋</text>
+                        <text class="company">仙女座科技有限公司</text>
+                    </view>
+                    <view class="weui-cell__ft tools">
+                        <text>2019/09/10</text>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_example ">
+                    <view class="weui-cell__hd">
+                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
+                    </view>
+                    <view class="weui-cell__bd user-info">
+                        <text class="user-name">大漠穷秋</text>
+                        <text class="company">仙女座科技有限公司</text>
+                    </view>
+                    <view class="weui-cell__ft tools">
+                        <text>2019/09/10</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

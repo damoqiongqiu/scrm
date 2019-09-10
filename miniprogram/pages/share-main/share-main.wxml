@@ -1,0 +1,26 @@
+<view class="page share-main-container">
+    <view class="weui-panel">
+        <view class="weui-panel__bd">
+            <view class="weui-grids">
+                <block>
+                    <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/phone.png" />
+                        <view class="weui-grid__label">生成海报</view>
+                    </navigator>
+                </block>
+                <block>
+                    <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/phone.png" />
+                        <view class="weui-grid__label">发到微信群</view>
+                    </navigator>
+                </block>
+                <block>
+                    <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/phone.png" />
+                        <view class="weui-grid__label">公众号</view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>

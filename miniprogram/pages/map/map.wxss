@@ -1,0 +1,11 @@
+.map-container {
+    padding: 40rpx;
+}
+
+.map-container .btn-container {
+    margin-top: 20rpx;
+}
+
+.map-container .btn-container .btn-view button {
+    border-radius: 0rpx;
+}

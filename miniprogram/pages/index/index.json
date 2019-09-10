@@ -1,0 +1,10 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "card-default": "/components/card-default/card-default",
+        "subject-action":"/components/subject-action/subject-action"
+    }
+}
