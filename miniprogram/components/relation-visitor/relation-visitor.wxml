@@ -23,92 +23,36 @@
     </view>
     <view class="weui-panel">
         <view class="weui-panel__bd">
-            <view class="weui-cells weui-cells_after-title">
-                <view class="weui-cell weui-cell_example ">
-                    <view class="weui-cell__hd">
-                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
-                    </view>
-                    <view class="weui-cell__bd user-info">
-                        <text class="user-name">大漠穷秋</text>
-                        <text class="company">仙女座科技有限公司</text>
-                    </view>
-                    <view class="weui-cell__ft tools">
-                        <text>2019/09/10</text>
-                    </view>
-                </view>
-                <view class="weui-cell weui-cell_example ">
-                    <view class="weui-cell__hd">
-                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
-                    </view>
-                    <view class="weui-cell__bd user-info">
-                        <text class="user-name">大漠穷秋</text>
-                        <text class="company">仙女座科技有限公司</text>
-                    </view>
-                    <view class="weui-cell__ft tools">
-                        <text>2019/09/10</text>
-                    </view>
-                </view>
-                <view class="weui-cell weui-cell_example ">
-                    <view class="weui-cell__hd">
-                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
-                    </view>
-                    <view class="weui-cell__bd user-info">
-                        <text class="user-name">大漠穷秋</text>
-                        <text class="company">仙女座科技有限公司</text>
-                    </view>
-                    <view class="weui-cell__ft tools">
-                        <text>2019/09/10</text>
-                    </view>
-                </view>
-                <view class="weui-cell weui-cell_example ">
-                    <view class="weui-cell__hd">
-                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
-                    </view>
-                    <view class="weui-cell__bd user-info">
-                        <text class="user-name">大漠穷秋</text>
-                        <text class="company">仙女座科技有限公司</text>
-                    </view>
-                    <view class="weui-cell__ft tools">
-                        <text>2019/09/10</text>
-                    </view>
-                </view>
-                <view class="weui-cell weui-cell_example ">
-                    <view class="weui-cell__hd">
-                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
-                    </view>
-                    <view class="weui-cell__bd user-info">
-                        <text class="user-name">大漠穷秋</text>
-                        <text class="company">仙女座科技有限公司</text>
-                    </view>
-                    <view class="weui-cell__ft tools">
-                        <text>2019/09/10</text>
-                    </view>
-                </view>
-                <view class="weui-cell weui-cell_example ">
-                    <view class="weui-cell__hd">
-                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
-                    </view>
-                    <view class="weui-cell__bd user-info">
-                        <text class="user-name">大漠穷秋</text>
-                        <text class="company">仙女座科技有限公司</text>
-                    </view>
-                    <view class="weui-cell__ft tools">
-                        <text>2019/09/10</text>
-                    </view>
-                </view>
-                <view class="weui-cell weui-cell_example ">
-                    <view class="weui-cell__hd">
-                        <image src="/assets/images/avatar.jpg" class="avatar"></image>
-                    </view>
-                    <view class="weui-cell__bd user-info">
-                        <text class="user-name">大漠穷秋</text>
-                        <text class="company">仙女座科技有限公司</text>
-                    </view>
-                    <view class="weui-cell__ft tools">
-                        <text>2019/09/10</text>
-                    </view>
-                </view>
-            </view>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
         </view>
     </view>
 </view>

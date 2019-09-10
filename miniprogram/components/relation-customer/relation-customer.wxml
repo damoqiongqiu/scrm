@@ -23,16 +23,36 @@
     </view>
     <view class="weui-panel">
         <view class="weui-panel__bd">
-            <card-list-item></card-list-item>
-            <card-list-item></card-list-item>
-            <card-list-item></card-list-item>
-            <card-list-item></card-list-item>
-            <card-list-item></card-list-item>
-            <card-list-item></card-list-item>
-            <card-list-item></card-list-item>
-            <card-list-item></card-list-item>
-            <card-list-item></card-list-item>
-            <card-list-item></card-list-item>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
+            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                <card-list-item-v2></card-list-item-v2>
+            </navigator>
         </view>
     </view>
 </view>

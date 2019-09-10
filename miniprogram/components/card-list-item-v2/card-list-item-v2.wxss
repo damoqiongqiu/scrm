@@ -1,0 +1,35 @@
+@import "../../assets/weui-2.0.0/style/widget/weui-cell/weui-cell.wxss";
+@import "../../assets/weui-2.0.0/style/widget/weui-cell/weui-access.wxss";
+
+.card-list-item-v2-container .avatar {
+    margin-right: 16px;
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+}
+
+.card-list-item-v2-container .user-info {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.card-list-item-v2-container .user-info .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-list-item-v2-container .user-info .company {
+    font-size: 12px;
+    color: #777;
+    padding-top: 5px;
+}
+
+.card-list-item-v2-container .tools {
+    align-self: flex-start;
+}

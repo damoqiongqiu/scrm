@@ -1,4 +1,4 @@
-<view class="page relation-main-container">
+<view class="page data-main-container">
     <view class="weui-tab">
         <view class="weui-navbar">
             <block wx:for="{{tabs}}" wx:key="*this">
@@ -8,14 +8,14 @@
             </block>
         </view>
         <view class="weui-tab__panel">
-            <view class="weui-tab__content relation-tab-container" hidden="{{activeIndex != 0}}">
+            <view class="weui-tab__content data-tab-container" hidden="{{activeIndex != 0}}">
                 <view wx:if="{{activeIndex==0}}">
-                    <relation-visitor></relation-visitor>
+                    <relation-analytics></relation-analytics>
                 </view>
             </view>
-            <view class="weui-tab__content relation-tab-container" hidden="{{activeIndex != 1}}">
+            <view class="weui-tab__content data-tab-container" hidden="{{activeIndex != 1}}">
                 <view wx:if="{{activeIndex==1}}">
-                    <relation-customer></relation-customer>
+                    <msg-analytics></msg-analytics>
                 </view>
             </view>
         </view>
