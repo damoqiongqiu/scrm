@@ -23,36 +23,41 @@
     </view>
     <view class="weui-panel">
         <view class="weui-panel__bd">
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
-            <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
-                <card-list-item-v2></card-list-item-v2>
-            </navigator>
+            <scroll-view scroll-y="{{true}}" scroll-with-animation="{{true}}" bindscrolltolower="loadMore">
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <navigator url="/pages/card-detail/card-detail" hover-class="weui-cell_active">
+                    <card-list-item-v2></card-list-item-v2>
+                </navigator>
+                <view class="weui-cell weui-cell_access loadmore" wx:if="{{loading}}">
+                    <text>正在加载...</text>
+                </view>
+            </scroll-view>
         </view>
     </view>
 </view>
