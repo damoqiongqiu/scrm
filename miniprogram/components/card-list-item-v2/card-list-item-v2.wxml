@@ -1,10 +1,10 @@
 <view class="weui-cell weui-cell_access card-list-item-v2-container">
     <view class="weui-cell__hd">
-        <image src="/assets/images/avatar.jpg" class="avatar"></image>
+        <image src="{{user.avatar}}" class="avatar"></image>
     </view>
     <view class="weui-cell__bd user-info">
-        <text class="user-name">大漠穷秋</text>
-        <text class="company">仙女座科技有限公司</text>
+        <text class="user-name">{{user.nickName||user.realName||user.userName}}</text>
+        <text class="company">{{user.companyName}}</text>
     </view>
     <view class="weui-cell__ft weui-cell__ft_in-access"></view>
 </view>

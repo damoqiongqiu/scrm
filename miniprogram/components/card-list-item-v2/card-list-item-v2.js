@@ -1,10 +1,14 @@
 Component({
+    options: { 
+        multipleSlots: true
+    }, 
     properties:{
-        userId:String
+        user:Object
     },
     data:{
     },
     methods:{
+
     },
     ready() {
     }

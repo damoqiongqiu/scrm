@@ -3,7 +3,7 @@ let sliderWidth = 96;
 
 Page({
     data: {
-        tabs: ["访客", "客户"],
+        tabs: ["动态", "客户"],
         activeIndex: 0,
         sliderOffset: 0,
         sliderLeft: 0
