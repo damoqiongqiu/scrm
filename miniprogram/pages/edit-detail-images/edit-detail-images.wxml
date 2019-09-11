@@ -3,7 +3,24 @@
         <view class="weui-panel__hd">
             <view class="page__title">编辑图文详情</view>
         </view>
-        <view class="weui-panel__bd"></view>
+        <view class="weui-panel__bd">
+            <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">
+                        <textarea class="weui-textarea" placeholder="请输入文本" style="height:400rpx;" />
+                        <view class="weui-textarea-counter">0/1000</view>
+                    </view>
+                </view>
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">
+                        <button type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="chooseImage">
+                            上传图片
+                        </button>
+                    </view>
+                </view>
+            </view>
+        </view>
     </view>
     <view class="weui-flex btn-container">
         <view class="weui-flex__item btn-view">
