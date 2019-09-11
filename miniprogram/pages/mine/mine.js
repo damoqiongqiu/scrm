@@ -6,5 +6,12 @@ Page({
   },
   handleTap: function(evt) {
     console.log(evt);
+  },
+  mpAlert(e){
+    wx.showToast({
+      title: 'Coming soon ...',
+      icon: 'success',
+      duration: 2000
+    })
   }
 })
