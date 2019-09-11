@@ -1,7 +1,7 @@
 .index-container {}
 
 .index-container .card-container {
-    padding: 20rpx;
+    padding: 40rpx 20rpx;
 }
 
 .index-container .btn-container {

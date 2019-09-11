@@ -1,7 +1,7 @@
 .card-detail-container {}
 
 .card-detail-container .card-container {
-    padding: 20rpx;
+    padding: 40rpx 20rpx;
 }
 
 .card-detail-container .btn-container {
