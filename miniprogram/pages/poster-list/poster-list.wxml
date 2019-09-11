@@ -1,0 +1,39 @@
+<view class="page poster-list-container">
+    <view class="weui-panel">
+        <view class="weui-panel__hd">
+            <view class="page__title">朋友圈海报</view>
+        </view>
+        <view class="weui-panel__bd" style="padding:16px;">
+            <scroll-view scroll-y="{{true}}" scroll-with-animation="{{true}}" bindscrolltolower="loadMore">
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <image src="/assets/images/1.jpg" mode="widthFix" bindtap='previewImg'></image>
+                    </view>
+                </view>
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <image src="/assets/images/2.jpg" mode="widthFix" bindtap='previewImg'></image>
+                    </view>
+                </view>
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <image src="/assets/images/3.jpg" mode="widthFix" bindtap='previewImg'></image>
+                    </view>
+                </view>
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <image src="/assets/images/4.jpg" mode="widthFix" bindtap='previewImg'></image>
+                    </view>
+                </view>
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <image src="/assets/images/5.jpg" mode="widthFix" bindtap='previewImg'></image>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_access loadmore" wx:if="{{loading}}">
+                    <text>正在加载...</text>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

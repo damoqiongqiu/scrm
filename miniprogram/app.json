@@ -13,7 +13,8 @@
     "pages/relation-main/relation-main",
     "pages/share-main/share-main",
     "pages/verify/verify",
-    "pages/data-main/data-main"
+    "pages/data-main/data-main",
+    "pages/poster-list/poster-list"
   ],
   "window": {
     "backgroundTextStyle": "light",
