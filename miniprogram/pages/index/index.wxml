@@ -58,7 +58,7 @@
                     <view class="weui-grid__label">编辑</view>
                 </navigator>
                 <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="/assets/images/poster.png" />
+                    <image class="weui-grid__icon" src="/assets/images/pengyouquan.png" />
                     <view class="weui-grid__label">朋友圈海报</view>
                 </navigator>
                 <view class="weui-grid" hover-class="weui-grid_active">
