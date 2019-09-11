@@ -3,7 +3,7 @@ Page({
         formats: {},
         bottom: 0,
         readOnly: false,
-        placeholder: '开始输入...',
+        placeholder: '介绍一下你的详情吧，支持文字和图片...',
         _focus: false,
     },
     readOnlyChange() {
@@ -12,7 +12,7 @@ Page({
         })
     },
     onLoad() {
-        
+
     },
     onEditorReady() {
         const that = this;
