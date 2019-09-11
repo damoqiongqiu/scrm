@@ -12,6 +12,10 @@
     border-radius: 0rpx;
 }
 
+.choose-card-template-container .loadmore {
+    padding: 40rpx 0rpx;
+}
+
 .choose-card-view {
     margin-bottom: 32rpx;
 }
