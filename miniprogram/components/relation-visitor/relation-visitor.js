@@ -1,3 +1,5 @@
+const db=wx.cloud.database();
+const _=db.command;
 Component({
     properties:{
         userId:String
@@ -8,9 +10,11 @@ Component({
     },
     methods:{
         loadData(){
+            console.log("加载数据...");
             let that=this;
-            const db=wx.cloud.database();
-            const _=db.command;
+            that.setData({
+                loading:true
+            });
             db.collection("actions")
                 .where({
                     toUser:{

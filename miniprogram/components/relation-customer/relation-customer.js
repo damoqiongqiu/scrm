@@ -1,19 +1,40 @@
+const db=wx.cloud.database();
+const _=db.command;
 Component({
     properties:{
         userId:String
     },
     data:{
-        loading:true
+        loading:true,
+        relations:[]
     },
     methods:{
         loadData(){
+            console.log("加载数据...");
             let that=this;
-            console.log("正在加载数据...");
-            setTimeout(()=>{
-                that.setData({
-                    loading:false
+            that.setData({
+                loading:true
+            });
+            db.collection("actions")
+                .where({
+                    toUser:{
+                        _id:"2"
+                    }
+                })
+                .limit(10)
+                .orderBy("time","desc")
+                .get({
+                    success:function(res){
+                        console.log(res);
+                        that.setData({
+                            loading:false,
+                            relations:[...res.data]
+                        });
+                    },
+                    fail:function(event){
+                        console.error(event);
+                    }
                 });
-            },2000);
         },
         loadMore(){
             console.log("下拉加载更多...");
