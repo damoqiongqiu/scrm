@@ -8,7 +8,7 @@
         </view>
         <view class="user-company">
             <text class="company-label">公司：</text>
-            <text class="company-name">{{userInfo.company}}</text>
+            <text class="company-name">{{userInfo.companyName}}</text>
         </view>
     </view>
     <view class="right-column">

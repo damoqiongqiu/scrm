@@ -1,19 +1,19 @@
 Component({
     properties:{
-        userId:String
+        userInfo: Object
     },
     data:{
-        userInfo: Object
     },
     methods:{
         getUserInfo(){
             console.log("获取用户资料...");
             this.setData({
                 userInfo:{
+                    _id:"aaaa-bbbb-cccc",
                     name:"大漠穷秋",
                     title:"飞碟探索工程师",
                     cellphone:"13013000000",
-                    company:"仙女座科技有限公司"
+                    companyName:"仙女座科技有限公司"
                 }
             });
         }
