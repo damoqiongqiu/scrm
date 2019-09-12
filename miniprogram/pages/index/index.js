@@ -2,9 +2,15 @@ const app = getApp()
 
 Page({
   data: {
-    hasLoggedIn:true
+    hasLoggedIn:true,
+    userInfo:{}
   },
   onLoad(){
+      app.userInfoReadyCallback=(userInfo)=>{
+        this.setData({
+          userInfo:userInfo
+        });
+      };
   },
   onShow(e){
   },
