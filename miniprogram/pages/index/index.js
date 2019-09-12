@@ -2,6 +2,7 @@ const app = getApp()
 
 Page({
   data: {
+    hasLoggedIn:true
   },
   onLoad(){
   },

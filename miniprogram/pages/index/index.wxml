@@ -1,74 +1,77 @@
 <view class="page index-container">
-    <view class="weui-panel">
-        <view class="weui-panel__bd card-container">
-            <card-default userId="1"></card-default>
+    <view wx:if="{{!hasLoggedIn}}">请登录</view>
+    <view wx:if="{{hasLoggedIn}}">
+        <view class="weui-panel">
+            <view class="weui-panel__bd card-container">
+                <card-default userId="1"></card-default>
+            </view>
         </view>
-    </view>
-    <view class="weui-panel">
-        <view class="weui-panel__bd">
-            <view class="weui-flex data-container">
-                <view class="weui-flex__item">
-                    <block>
-                        <navigator class="data-item" url="" hover-class="weui-grid_active">
-                            <view class="data">65535</view>
-                            <view class="label">今日访客</view>
-                        </navigator>
-                    </block>
-                </view>
-                <view class="weui-flex__item">
-                    <block>
-                        <navigator class="data-item" url="" hover-class="weui-grid_active">
-                            <view class="data">65535</view>
-                            <view class="label">总访客数</view>
-                        </navigator>
-                    </block>
-                </view>
-                <view class="weui-flex__item">
-                    <block>
-                        <navigator class="data-item" url="" hover-class="weui-grid_active">
-                            <view class="data">65535</view>
-                            <view class="label">总客户数</view>
-                        </navigator>
-                    </block>
-                </view>
-                <view class="weui-flex__item">
-                    <block>
-                        <navigator class="data-item" url="" hover-class="weui-grid_active">
-                            <view class="data">65535</view>
-                            <view class="label">今日消息数</view>
-                        </navigator>
-                    </block>
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-flex data-container">
+                    <view class="weui-flex__item">
+                        <block>
+                            <navigator class="data-item" url="" hover-class="weui-grid_active">
+                                <view class="data">65535</view>
+                                <view class="label">今日访客</view>
+                            </navigator>
+                        </block>
+                    </view>
+                    <view class="weui-flex__item">
+                        <block>
+                            <navigator class="data-item" url="" hover-class="weui-grid_active">
+                                <view class="data">65535</view>
+                                <view class="label">总访客数</view>
+                            </navigator>
+                        </block>
+                    </view>
+                    <view class="weui-flex__item">
+                        <block>
+                            <navigator class="data-item" url="" hover-class="weui-grid_active">
+                                <view class="data">65535</view>
+                                <view class="label">总客户数</view>
+                            </navigator>
+                        </block>
+                    </view>
+                    <view class="weui-flex__item">
+                        <block>
+                            <navigator class="data-item" url="" hover-class="weui-grid_active">
+                                <view class="data">65535</view>
+                                <view class="label">今日消息数</view>
+                            </navigator>
+                        </block>
+                    </view>
                 </view>
             </view>
         </view>
-    </view>
-    <view class="weui-panel">
-        <view class="weui-panel__bd">
-            <view class="weui-grids">
-                <navigator bindtap="scanCode" url="" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="/assets/images/scan.png" />
-                    <view class="weui-grid__label">扫一扫</view>
-                </navigator>
-                <navigator url="../card-detail/card-detail" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="/assets/images/preview.png" />
-                    <view class="weui-grid__label">预览</view>
-                </navigator>
-                <navigator url="../edit-main/edit-main" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="/assets/images/edit.png" />
-                    <view class="weui-grid__label">编辑</view>
-                </navigator>
-                <navigator url="/pages/poster-list/poster-list" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="/assets/images/pengyouquan.png" />
-                    <view class="weui-grid__label">朋友圈海报</view>
-                </navigator>
-                <view class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="/assets/images/group.png" />
-                    <view class="weui-grid__label">发送到微信群</view>
-                    <button class="share-btn" open-type="share">分享</button>
-                </view>
-                <view bindtap="mpAlert" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="/assets/images/posts.png" />
-                    <view class="weui-grid__label">公众号推广</view>
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-grids">
+                    <navigator bindtap="scanCode" url="" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/scan.png" />
+                        <view class="weui-grid__label">扫一扫</view>
+                    </navigator>
+                    <navigator url="../card-detail/card-detail" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/preview.png" />
+                        <view class="weui-grid__label">预览</view>
+                    </navigator>
+                    <navigator url="../edit-main/edit-main" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/edit.png" />
+                        <view class="weui-grid__label">编辑</view>
+                    </navigator>
+                    <navigator url="/pages/poster-list/poster-list" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/pengyouquan.png" />
+                        <view class="weui-grid__label">朋友圈海报</view>
+                    </navigator>
+                    <view class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/group.png" />
+                        <view class="weui-grid__label">发送到微信群</view>
+                        <button class="share-btn" open-type="share">分享</button>
+                    </view>
+                    <view bindtap="mpAlert" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="/assets/images/posts.png" />
+                        <view class="weui-grid__label">公众号推广</view>
+                    </view>
                 </view>
             </view>
         </view>
