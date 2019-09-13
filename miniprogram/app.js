@@ -100,9 +100,10 @@ App({
 
                                 // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
                                 // 所以此处加入 callback 以防止这种情况
-                                // userInfoReadyCallback定义在index.js里面
-                                if (that.userInfoReadyCallback) {
-                                  that.userInfoReadyCallback(that.globalData.userInfo)
+                                if(that.callbacks&&that.callbacks.length){
+                                  that.callbacks.forEach((item,index,array)=>{
+                                    item(that.globalData.userInfo);
+                                  });
                                 }
                             },
                             fail:function(event){
@@ -119,5 +120,6 @@ App({
   },
   globalData: {
     userInfo: {}
-  }
+  },
+  callbacks:[]
 })

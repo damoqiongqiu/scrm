@@ -12,7 +12,7 @@
                     <view class="weui-flex__item">
                         <block>
                             <navigator class="data-item" url="" hover-class="weui-grid_active">
-                                <view class="data">65535</view>
+                                <view class="data">{{statData.visitors_today}}</view>
                                 <view class="label">今日访客</view>
                             </navigator>
                         </block>
@@ -20,7 +20,7 @@
                     <view class="weui-flex__item">
                         <block>
                             <navigator class="data-item" url="" hover-class="weui-grid_active">
-                                <view class="data">65535</view>
+                                <view class="data">{{statData.visitors_total}}</view>
                                 <view class="label">总访客数</view>
                             </navigator>
                         </block>
@@ -28,7 +28,7 @@
                     <view class="weui-flex__item">
                         <block>
                             <navigator class="data-item" url="" hover-class="weui-grid_active">
-                                <view class="data">65535</view>
+                                <view class="data">{{statData.customers}}</view>
                                 <view class="label">总客户数</view>
                             </navigator>
                         </block>
@@ -36,7 +36,7 @@
                     <view class="weui-flex__item">
                         <block>
                             <navigator class="data-item" url="" hover-class="weui-grid_active">
-                                <view class="data">65535</view>
+                                <view class="data">{{statData.msg_today}}</view>
                                 <view class="label">今日消息数</view>
                             </navigator>
                         </block>

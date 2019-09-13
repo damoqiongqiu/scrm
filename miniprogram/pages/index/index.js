@@ -3,14 +3,39 @@ const app = getApp()
 Page({
   data: {
     hasLoggedIn:true,
-    userInfo:{}
+    userInfo:{},
+    statData:{}
   },
   onLoad(){
-      app.userInfoReadyCallback=(userInfo)=>{
-        this.setData({
-          userInfo:userInfo
-        });
-      };
+    let that=this;
+    const db=wx.cloud.database();
+    const _=db.command;
+
+    app.callbacks.push((userInfo)=>{
+      this.setData({
+        userInfo:userInfo
+      });
+    });
+
+    app.callbacks.push((userInfo)=>{
+      db.collection("statistics-first-page")
+        .where({
+          userId:userInfo._id
+        })
+        .limit(1)
+        .get({
+          success:function(res){
+            if(res&&res.data&&res.data.length){
+              that.setData({
+                statData:res.data[0]
+              });
+            }
+          },
+          fail:function(event){
+            console.error(event);
+          }
+        })
+    });
   },
   onShow(e){
   },
