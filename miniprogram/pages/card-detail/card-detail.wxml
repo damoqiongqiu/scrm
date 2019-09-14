@@ -1,7 +1,7 @@
 <view class="page card-detail-container">
     <view class="weui-panel">
         <view class="weui-panel__bd card-container">
-            <card-default userId="1"></card-default>
+            <card-default userId="{{userId}}"></card-default>
         </view>
     </view>
     <view class="weui-panel">

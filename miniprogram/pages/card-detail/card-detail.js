@@ -1,8 +1,13 @@
+const app = getApp();
+
 Page({
     data: {
+        userId:""
     },
     onLoad: function () {
-        
+        this.setData({
+            userId:app.globalData.userInfo._id
+        });
     },
     toEdit(e){
         wx.navigateTo({

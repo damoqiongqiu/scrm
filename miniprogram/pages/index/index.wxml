@@ -3,7 +3,7 @@
     <view wx:if="{{hasLoggedIn}}">
         <view class="weui-panel">
             <view class="weui-panel__bd card-container">
-                <card-default cardInfo="{{cardInfo}}"></card-default>
+                <card-default id="card-default" userId="{{userInfo._id}}"></card-default>
             </view>
         </view>
         <view class="weui-panel">
