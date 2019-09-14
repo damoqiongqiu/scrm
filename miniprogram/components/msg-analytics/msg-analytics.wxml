@@ -2,7 +2,7 @@
     <view class="weui-panel">
         <view class="weui-panel__bd">
             <view class="weui-grids">
-                <block wx:for="{{msgs}}">
+                <block wx:for="{{statData}}">
                     <navigator url="" class="weui-grid" hover-class="weui-grid_active">
                         <view class="data">{{item.count}}</view>
                         <view class="weui-grid__label">{{item.label}}</view>

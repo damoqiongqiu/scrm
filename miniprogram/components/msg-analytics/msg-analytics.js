@@ -3,8 +3,8 @@
  * https://github.com/ecomfe/echarts-for-weixin
  */
 import * as echarts from "../ec-canvas/echarts";
-
-let chart3 = null;//曲线图
+const app = getApp();
+let chart3 = null;
 
 function initChart3(canvas, width, height) {
     const chart = echarts.init(canvas, null, {
@@ -68,39 +68,70 @@ Component({
         userId:String
     },
     data: {
-        msgs: [
+        statData: [
             {
                 label:"今日接受",
-                count:20
+                count:0
             },
             {
                 label:"今日发送",
-                count:10
+                count:0
             },
             {
                 label:"今日总数",
-                count:30
+                count:0
             },
             {
                 label:"本月接受",
-                count:120
+                count:0
             },
             {
                 label:"本月发送",
-                count:110
+                count:0
             },
             {
                 label:"本月总数",
-                count:230
+                count:0
             }
         ],
         ec3: {
             onInit: initChart3
-        }
+        },
+        userInfo:{}
     },
     methods:{
+        loadStatData(){
+            let that=this;
+            const db=wx.cloud.database();
+            const _=db.command;
+            let userInfo=app.globalData.userInfo;
+            console.log(userInfo);
+            this.setData({
+                userInfo:userInfo
+            });
+            db.collection("statistics-analytics")
+                .where({
+                    userId:userInfo._id,
+                    type:"msg"
+                })
+                .orderBy("dispaly_order","ASC")
+                .get({
+                    success:function(res){
+                        console.log(res);
+                        if(res&&res.data&&res.data.length){
+                            that.setData({
+                                statData:res.data
+                            });
+                        }
+                    },
+                    fail:function(event){
+                        console.error(event);
+                    }
+                });
+        }
     },
     ready() {
+        this.loadStatData();
         setTimeout(function () {
             console.log(chart3);
         }, 2000);

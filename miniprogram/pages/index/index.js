@@ -4,7 +4,12 @@ Page({
   data: {
     hasLoggedIn:true,
     userInfo:{},
-    statData:{}
+    statData:{
+      visitors_today:0,
+      visitors_total:0,
+      customers:0,
+      msg_today:0
+    }
   },
   onLoad(){
     let that=this;
