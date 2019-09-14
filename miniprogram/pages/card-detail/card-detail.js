@@ -49,5 +49,17 @@ Page({
                 console.log(res)
             }
         });
+    },
+    previewImg:function(e){
+        console.log(e.currentTarget.dataset.index);
+        var index = e.currentTarget.dataset.index;
+        var imgArr = this.data.imgArr;
+        wx.previewImage({
+            current: imgArr[index],
+            urls: imgArr,
+            success: function(res) {},
+            fail: function(res) {},
+            complete: function(res) {},
+        })
     }
 })
