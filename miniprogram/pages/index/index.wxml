@@ -10,36 +10,28 @@
             <view class="weui-panel__bd">
                 <view class="weui-flex data-container">
                     <view class="weui-flex__item">
-                        <block>
-                            <navigator class="data-item" url="" hover-class="weui-grid_active">
-                                <view class="data">{{statData.visitors_today}}</view>
-                                <view class="label">今日访客</view>
-                            </navigator>
-                        </block>
+                        <navigator class="data-item" url="/pages/data-main/data-main" hover-class="weui-grid_active">
+                            <view class="data">{{statData.visitors_today}}</view>
+                            <view class="label">今日访客</view>
+                        </navigator>
                     </view>
                     <view class="weui-flex__item">
-                        <block>
-                            <navigator class="data-item" url="" hover-class="weui-grid_active">
-                                <view class="data">{{statData.visitors_total}}</view>
-                                <view class="label">总访客数</view>
-                            </navigator>
-                        </block>
+                        <navigator class="data-item" url="/pages/data-main/data-main" hover-class="weui-grid_active">
+                            <view class="data">{{statData.visitors_total}}</view>
+                            <view class="label">总访客数</view>
+                        </navigator>
                     </view>
                     <view class="weui-flex__item">
-                        <block>
-                            <navigator class="data-item" url="" hover-class="weui-grid_active">
-                                <view class="data">{{statData.customers}}</view>
-                                <view class="label">总客户数</view>
-                            </navigator>
-                        </block>
+                        <navigator class="data-item" url="/pages/data-main/data-main" hover-class="weui-grid_active">
+                            <view class="data">{{statData.customers}}</view>
+                            <view class="label">总客户数</view>
+                        </navigator>
                     </view>
                     <view class="weui-flex__item">
-                        <block>
-                            <navigator class="data-item" url="" hover-class="weui-grid_active">
-                                <view class="data">{{statData.msg_today}}</view>
-                                <view class="label">今日消息数</view>
-                            </navigator>
-                        </block>
+                        <navigator class="data-item" url="/pages/data-main/data-main" hover-class="weui-grid_active">
+                            <view class="data">{{statData.msg_today}}</view>
+                            <view class="label">今日消息数</view>
+                        </navigator>
                     </view>
                 </view>
             </view>
@@ -51,11 +43,11 @@
                         <image class="weui-grid__icon" src="/assets/images/scan.png" />
                         <view class="weui-grid__label">扫一扫</view>
                     </navigator>
-                    <navigator url="../card-detail/card-detail" class="weui-grid" hover-class="weui-grid_active">
+                    <navigator url="/pages/card-detail/card-detail" class="weui-grid" hover-class="weui-grid_active">
                         <image class="weui-grid__icon" src="/assets/images/preview.png" />
                         <view class="weui-grid__label">预览</view>
                     </navigator>
-                    <navigator url="../edit-main/edit-main" class="weui-grid" hover-class="weui-grid_active">
+                    <navigator url="/pages/edit-main/edit-main" class="weui-grid" hover-class="weui-grid_active">
                         <image class="weui-grid__icon" src="/assets/images/edit.png" />
                         <view class="weui-grid__label">编辑</view>
                     </navigator>
