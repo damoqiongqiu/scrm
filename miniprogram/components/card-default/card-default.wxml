@@ -1,19 +1,19 @@
 <view class="card-container">
     <view class="left-column">
-        <text class="user-name">{{userInfo.realName||userInfo.nickName}}</text>
-        <text class="user-title">{{userInfo.title||"---"}}</text>
+        <text class="user-name">{{cardInfo.realName||cardInfo.nickName||"---"}}</text>
+        <text class="user-title">{{cardInfo.title||"---"}}</text>
         <view class="user-cellphone">
             <text class="cellphone-label">手机：</text>
-            <text class="cellphone-number">{{userInfo.cellphone||"---"}}</text>
+            <text class="cellphone-number">{{cardInfo.cellphone||"---"}}</text>
         </view>
         <view class="user-company">
             <text class="company-label">公司：</text>
-            <text class="company-name">{{userInfo.companyName||"---"}}</text>
+            <text class="company-name">{{cardInfo.companyName||"---"}}</text>
         </view>
     </view>
     <view class="right-column">
         <view class="avatar">
-            <image src="/assets/images/avatar.jpg"></image>
+            <image src="{{cardInfo.avatar||'/assets/images/pic_160.png'}}"></image>
         </view>
         <!-- <view class="info">
             <text>客户</text>

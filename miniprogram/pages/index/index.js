@@ -9,7 +9,8 @@ Page({
       visitors_total:0,
       customers:0,
       msg_today:0
-    }
+    },
+    cardInfo:{}
   },
   onLoad(){
     let that=this;
@@ -40,6 +41,26 @@ Page({
             console.error(event);
           }
         })
+    });
+
+    app.callbacks.push((userInfo)=>{
+      db.collection("card-items")
+        .where({
+          userId:userInfo._id
+        })
+        .limit(1)
+        .get({
+          success:function(res){
+            if(res&&res.data&&res.data.length){
+              that.setData({
+                cardInfo:res.data[0]
+              });
+            }
+          },
+          fail:function(event){
+            console.error(event);
+          }
+        });
     });
   },
   onShow(e){

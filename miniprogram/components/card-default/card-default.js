@@ -1,6 +1,6 @@
 Component({
     properties:{
-        userInfo: Object
+        cardInfo: Object
     },
     data:{
     },
