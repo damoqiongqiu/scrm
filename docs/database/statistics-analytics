@@ -1,0 +1,12 @@
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210211e","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"客户总数","count":65535.0,"dispaly_order":1,"type":"relation"}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210211f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"本周新增","count":300.0,"dispaly_order":2,"type":"relation"}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210212f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"本月新增","count":300.0,"dispaly_order":3,"type":"relation"}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210213f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"访客总数","count":300.0,"dispaly_order":4,"type":"relation"}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210214f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"今日来访","count":300.0,"dispaly_order":5,"type":"relation"}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210215f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"本月来访","count":300.0,"dispaly_order":6,"type":"relation"}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210221e","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"今日接受","count":655.0,"type":"msg","dispaly_order":1}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210231f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"今日发送","count":300.0,"type":"msg","dispaly_order":2}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210242f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"今日总数","count":300.0,"type":"msg","dispaly_order":3}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210253f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"本月接受","count":300.0,"type":"msg","dispaly_order":4}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210264f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"本月发送","count":300.0,"type":"msg","dispaly_order":5}
+{"_id":"37559690-6e70-43b2-aaee-9ad5a210275f","userId":"5d262bd45d79fba318a3d0db25a4b801","label":"本月总数","count":300.0,"type":"msg","dispaly_order":6}
